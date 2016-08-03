@@ -1,10 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
 <head>
 	<meta charset="UTF-8">
 	<title>Angular Crud</title>
 </head>
-<body>
+<body ui-view>
+
+<!-- AngularJS -->	
+<script src="assets/angular.min.js"></script>
+
+<!-- rotas -->
+<script src="assets/angular-ui-router.js"></script>
+
+<!-- modulo principal -->
+<script src="app/modules/app.module.js"></script>
+
+<!-- Nosso arquivo de configuracao -->
+<script src="app/config/app.config.js"></script>
+
+<!-- controller listar -->
+<script src="app/controllers/listar.controller.js"></script>
 	
 </body>
 </html>
