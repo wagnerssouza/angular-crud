@@ -1,6 +1,14 @@
-<div ng-controller="listarController">
+<div ng-controller="listarController as vm">
 	
 	<h2>Listar</h2>
+
+	<ul ng-repeat="user in vm.users">
+		<li>
+		<p>{{user.id}}</p>
+		<p>{{user.name}}</p>
+		<p>{{user.email}}</p>
+		</li>
+	</ul>
 
 
 
