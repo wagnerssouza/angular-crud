@@ -23,6 +23,14 @@
 				})
 			}
 
+			this.deletar = function(id) {
+				return $http({
+					url: url + id,
+					method:  'DELETE',
+					
+				})
+			}
+
 		}
 	}
 )();

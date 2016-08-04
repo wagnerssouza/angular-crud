@@ -28,6 +28,13 @@
 						templateUrl: 'app/views/listar.html',
 						url: '/listar',
 						cache: false
+					})
+				.state('layout.deletar',
+					{
+						templateUrl: 'app/views/deletar.html',
+						url: '/deletar',
+						cache: false
+
 					});
 		}
 	}
