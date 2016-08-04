@@ -35,6 +35,13 @@
 						url: '/deletar',
 						cache: false
 
+					})
+				.state('layout.alterar',
+					{
+						templateUrl: 'app/views/alterar.html',
+						url: '/alterar/:id',
+						cache: false
+
 					});
 		}
 	}

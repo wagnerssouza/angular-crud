@@ -29,6 +29,8 @@
 				function sucess(retorno){
 					alert('deletado');
 					$state.go('layout.listar');
+					//$state.reload('layout.listar');
+
 
 				}
 

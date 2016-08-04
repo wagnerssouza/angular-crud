@@ -8,9 +8,13 @@
 
 		function userService($http, url) {
 
-			this.listar = function () {
+			this.listar = function (id) {
+				if((id == null) || (id == "")){
+					id = "";
+					return id
+				}
 				return $http({
-					url : url,
+					url : url + id,
 					method: 'GET'
 				})
 			}
@@ -27,6 +31,15 @@
 				return $http({
 					url: url + id,
 					method:  'DELETE',
+					
+				})
+			}
+
+			this.alterar = function(user) {
+				return $http({
+					url: url,
+					method:  'PUT',
+					data: user
 					
 				})
 			}

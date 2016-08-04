@@ -11,8 +11,9 @@
 			var vm = this;
 
 			vm.users = [];
+			var id = " ";
 
-			userService.listar().then(sucess, error);
+			userService.listar(id).then(sucess, error);
 
 			function sucess(retorno){
 				vm.users = retorno.data;

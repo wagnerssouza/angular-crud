@@ -1,0 +1,33 @@
+<style>
+	label {
+		display: block;
+		margin-bottom: 15px;
+	}
+	span {
+		display: block;
+	}
+</style>
+<div ng-controller="alterarController as vm">
+	
+	<h2>Listar</h2>
+
+	<form ng-submit="vm.alterar()">
+		
+	<label for="">
+		<span>Nome</span>
+		<input type="text" required="" ng-model="vm.user.name">
+	</label>
+	<label for="">
+		<span>Email</span>
+		<input type="email" required="" ng-model="vm.user.email">
+	</label>
+
+	<button type="submit" class="btn btn-default">Submit</button>
+
+
+	</form>
+
+
+
+</div>
+
